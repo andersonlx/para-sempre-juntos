@@ -82,7 +82,7 @@ body {
     margin-top: 20px;
 }
 
-/* Estilo do controle de áudio */
+/* 🔹 Ajuste do contêiner do botão de áudio */
 .audio-controls {
     margin-top: 20px;
     display: flex;
@@ -90,17 +90,19 @@ body {
     width: 100%;
 }
 
-/* 🔹 Botão Play/Pause corrigido */
+/* 🔹 Botão Play/Pause corrigido para todos os navegadores */
 .play-pause-btn {
-    background-color: #4CAF50 !important;
-    color: white !important;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, transform 0.3s;
@@ -108,19 +110,31 @@ body {
     appearance: none;
     -webkit-appearance: none;
     outline: none;
+    text-align: center;
+}
+
+/* 🔹 Ajuste para que o botão não estique no Safari */
+@supports (-webkit-touch-callout: none) {
+    .play-pause-btn {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* 🔹 Ícones centralizados corretamente */
 .play-pause-btn .icon {
     font-size: 28px;
-    color: white !important;
-    margin: 0;
+    color: white;
+    margin-bottom: 4px;
 }
 
-/* Efeito de hover */
-.play-pause-btn:hover {
-    background-color: #45a049 !important;
-    transform: scale(1.1);
+/* 🔹 Texto do botão Play/Pause */
+#btn-text {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 /* 🔹 Ícone de pause inicialmente escondido */
@@ -133,7 +147,8 @@ body {
     display: inline;
 }
 
-/* 🔹 Remove o texto do botão (mantendo apenas o ícone) */
-#btn-text {
-    display: none;
+/* 🔹 Efeito de hover */
+.play-pause-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
 }
