@@ -31,7 +31,6 @@ function toggleMusic() {
     }
 }
 
-
 const startDate = new Date("2022-09-20T22:46:00"); // Altere para a data desejada
 
 function updateTimer() {
@@ -50,7 +49,14 @@ function updateTimer() {
     diff -= minutes * (1000 * 60);
     let seconds = Math.floor(diff / 1000);
 
-    document.getElementById("timer").innerHTML = `${years} anos, ${months} meses, ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+    // Atualiza as unidades do contador
+    document.getElementById("years").textContent = `${years} anos`;
+    document.getElementById("months").textContent = `${months} meses`;
+    document.getElementById("days").textContent = `${days} dias`;
+
+    document.getElementById("hours").textContent = `${hours} horas`;
+    document.getElementById("minutes").textContent = `${minutes} minutos`;
+    document.getElementById("seconds").textContent = `${seconds} segundos`;
 }
 
 setInterval(updateTimer, 1000);
