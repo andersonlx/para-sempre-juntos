@@ -33,6 +33,14 @@ h1 {
     padding-right: 20px;
 }
 
+/* Ajuste para telas menores */
+@media (max-width: 480px) { /* Dispositivos móveis */
+    .slideshow-container {
+        max-width: 90%; /* Mantém o slideshow responsivo */
+    }
+}
+
+
 /* Estilo das imagens do slideshow */
 .slide {
     display: none;
