@@ -70,14 +70,14 @@ body {
 
 /* Estilo do texto abaixo do slideshow */
 .text {
-    font-size: 2em;
-    margin-top: 10px;
+    font-size: 1.7em;
+    margin-top: 8px;
 }
 
 /* Estilo do timer container */
 .timer-container {
-    margin-top: 30px;
-    font-size: 2em;
+    margin-top: 10px;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -92,14 +92,14 @@ body {
 .lower {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 10px;
 }
 
 /* Ajuste da fonte para telas pequenas */
 @media (max-width: 480px) {
     .timer-container {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .upper span, .lower span {
