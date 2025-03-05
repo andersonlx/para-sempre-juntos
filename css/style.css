@@ -45,6 +45,11 @@ body {
         max-width: 90%;
         width: 90%;
     }
+
+    /* Diminuir tamanho da fonte do contador para mobile */
+    .timer {
+        font-size: 1.2em;
+    }
 }
 
 /* Estilo das imagens do slideshow */
@@ -74,10 +79,28 @@ body {
     margin-top: 10px;
 }
 
-/* Estilo do timer */
+/* Estilo do timer (contador) */
 .timer {
     font-size: 1.5em;
     margin-top: 20px;
+}
+
+/* Estrutura para o contador */
+.timer .upper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Espaço entre as duas partes do contador */
+}
+
+.timer .lower {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo do contêiner para cada unidade de tempo (anos, meses, dias, etc.) */
+.timer .unit {
+    margin: 0 15px;
+    font-size: 1.2em;
 }
 
 /* 🔹 Ajuste do contêiner do botão de áudio */
@@ -106,6 +129,7 @@ body {
     -webkit-appearance: none;
     outline: none;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 🔹 Sombras adicionadas */
 }
 
 /* 🔹 Ícones dentro do botão com espaçamento correto */
@@ -143,4 +167,12 @@ body {
 .play-pause-btn:hover {
     background-color: #45a049;
     transform: scale(1.1);
+}
+
+/* Exemplo para melhorar a responsividade */
+@media (max-width: 480px) {
+    .play-pause-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
 }
