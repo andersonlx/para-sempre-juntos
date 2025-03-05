@@ -99,7 +99,7 @@ body {
 /* Ajuste da fonte para telas pequenas */
 @media (max-width: 480px) {
     .timer-container {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .upper span, .lower span {
