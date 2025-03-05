@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Nosso Amor</h1>
+    <div class="slideshow-container">
+        <img class="slide fade" src="images/imagem01.jpeg" alt="Foto 1">
+        <img class="slide fade" src="images/imagem02.jpeg" alt="Foto 2">
+        <img class="slide fade" src="images/imagem03.jpeg" alt="Foto 3">
+        <img class="slide fade" src="images/imagem04.jpeg" alt="Foto 4">
+        <img class="slide fade" src="images/imagem05.jpeg" alt="Foto 5">
+        <img class="slide fade" src="images/imagem06.jpeg" alt="Foto 6">
+        <img class="slide fade" src="images/imagem07.jpeg" alt="Foto 7">
+        <img class="slide fade" src="images/imagem08.jpeg" alt="Foto 8">
+        <img class="slide fade" src="images/imagem09.jpeg" alt="Foto 9">
+        <img class="slide fade" src="images/imagem10.jpeg" alt="Foto 10">
+        <img class="slide fade" src="images/imagem11.jpeg" alt="Foto 11">
+        <img class="slide fade" src="images/imagem12.jpeg" alt="Foto 12">
+        <img class="slide fade" src="images/imagem13.jpeg" alt="Foto 13">
+        
+    </div>
+    <div class="text">Juntos</div>
+    <div class="timer" id="timer"></div>
+    <div class="audio-controls">
+        <audio id="background-music" autoplay loop>
+            <source src="music/music.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <button class="play-pause-btn" onclick="toggleMusic()">
+            <span id="play-icon" class="icon">&#9658;</span> <!-- Play Icon -->
+            <span id="pause-icon" class="icon">&#10074;&#10074;</span> <!-- Pause Icon -->
+            <span id="btn-text">Play</span>
+        </button>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'); /* Importando Font Awesome para ícones */
+
+/* Estilo do corpo */
+body {
+    background: url('https://images.freejpg.com.ar/900/0510/romance-backgrounds-love-background-lights-abstract-night-defocused-F100032173.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do título */
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+/* Contêiner do slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 390px;
+    height: 844px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Estilo das imagens do slideshow */
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animação de fade nas imagens */
+.fade {
+    animation: fade 5s infinite;
+}
+
+/* Keyframes para animação de fade */
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Estilo do texto abaixo do slideshow */
+.text {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* Estilo do timer */
+.timer {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Estilo do controle de áudio */
+.audio-controls {
+    margin-top: 20px;
+}
+
+/* Estilo do botão Play/Pause */
+.play-pause-btn {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remover bordas */
+    border-radius: 50px; /* Bordas arredondadas */
+    padding: 15px 30px; /* Espaçamento interno maior */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mãozinha */
+    display: flex; /* Flexbox para alinhar ícones e texto */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    transition: background-color 0.3s, transform 0.3s; /* Animação de transição */
+    margin: 20px auto; /* Centralizar o botão horizontalmente */
+}
+
+/* Efeito de hover no botão */
+.play-pause-btn:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom no botão */
+}
+
+/* Estilo dos ícones */
+.icon {
+    font-size: 24px; /* Tamanho dos ícones */
+    margin-right: 10px; /* Espaço entre ícones e texto */
+}
+
+/* Esconder o ícone de pause inicialmente */
+#pause-icon {
+    display: none;
+}
+
+/* Mostrar o ícone de play quando o áudio estiver pausado */
+#play-icon {
+    display: inline;
+}
+
+/* Estilo do texto do botão */
+#btn-text {
+    font-size: 18px; /* Tamanho do texto */
+}
