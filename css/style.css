@@ -34,7 +34,7 @@ body {
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-top: 40px; /* 🔹 Adicionando a margem acima do slideshow */
+    margin-top: 40px; /* Espaçamento superior */
 }
 
 /* Ajuste para telas menores */
@@ -42,9 +42,29 @@ body {
     .parent-container {
         padding: 0;
     }
+
     .slideshow-container {
         max-width: 90%;
         width: 90%;
+    }
+
+    /* Para os textos (data e timer) no mobile */
+    .date-info, .time-info {
+        position: relative;
+        font-size: 1.2em; /* Fonte menor */
+        color: white;
+        text-align: center;
+        margin-top: 20px; /* Espaço entre o slideshow e os textos */
+    }
+
+    /* Ajuste do tamanho da fonte para o timer no mobile */
+    .timer {
+        font-size: 1.5em; /* Fonte menor para o timer */
+    }
+
+    /* Ajuste da fonte de anos, meses e dias */
+    .years-months-days {
+        font-size: 1.2em; /* Fonte menor */
     }
 }
 
@@ -75,8 +95,9 @@ body {
     top: 20px;
     width: 100%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em; /* Fonte menor */
     font-weight: bold;
+    color: white;
 }
 
 /* Estilo do timer (em baixo) */
@@ -85,13 +106,8 @@ body {
     bottom: 20px;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
-}
-
-/* Estilo do timer */
-.timer {
-    font-size: 2em;
-    margin-top: 20px;
+    font-size: 1.2em; /* Fonte menor para o timer */
+    color: white;
 }
 
 /* Estilo do controle de áudio */
