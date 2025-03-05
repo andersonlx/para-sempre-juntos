@@ -22,6 +22,7 @@ body {
     justify-content: center;
     width: 100%;
     padding: 0 20px;
+    position: relative;
 }
 
 /* Contêiner do slideshow com margem acima */
@@ -68,19 +69,32 @@ body {
     100% { opacity: 0; }
 }
 
-/* Estilo do texto abaixo do slideshow */
-.text {
+/* Estilo do texto de anos, meses e dias (em cima) */
+.date-info {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
     font-size: 2em;
-    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilo do timer (em baixo) */
+.time-info {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /* Estilo do timer */
 .timer {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 20px;
 }
 
-/* 🔹 Ajuste do contêiner do botão de áudio */
+/* Estilo do controle de áudio */
 .audio-controls {
     margin-top: 40px; /* 🔹 Adicionado mais espaço abaixo do slideshow */
     display: flex;
@@ -88,58 +102,33 @@ body {
     width: 100%;
 }
 
-/* 🔹 Botão Play/Pause corrigido */
+/* Botão Play/Pause */
 .play-pause-btn {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 50px; /* 🔹 Mantém o formato original */
-    padding: 15px 30px; /* 🔹 Tamanho do botão */
+    border-radius: 50px;
+    padding: 15px 30px;
     font-size: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, transform 0.3s;
-    margin: 20px auto; /* 🔹 Ajuste de margem para centralizar */
+    margin: 20px auto;
     appearance: none;
     -webkit-appearance: none;
     outline: none;
     text-align: center;
 }
 
-/* 🔹 Ícones dentro do botão com espaçamento correto */
+/* Ícones dentro do botão */
 .play-pause-btn .icon {
-    font-size: 24px;  /* 🔹 Definição do mesmo tamanho de ícone para Play e Pause */
+    font-size: 24px;
     margin-right: 10px;
 }
 
-/* 🔹 Ajuste para que o botão não fique deformado no Safari */
-@supports (-webkit-touch-callout: none) {
-    .play-pause-btn {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* 🔹 Texto do botão Play/Pause */
-#btn-text {
-    font-size: 18px;
-}
-
-/* 🔹 Ícone de pause inicialmente escondido */
-#pause-icon {
-    display: none;
-}
-
-/* 🔹 Ícone de play visível por padrão */
-#play-icon {
-    display: inline;
-    margin-right: 10px; /* 🔹 Ajuste para alinhar o texto do Play corretamente */
-}
-
-/* 🔹 Efeito de hover */
+/* Efeito de hover */
 .play-pause-btn:hover {
     background-color: #45a049;
     transform: scale(1.1);
