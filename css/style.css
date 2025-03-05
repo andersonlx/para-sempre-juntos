@@ -29,8 +29,8 @@ h1 {
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    border-left: 5px solid #000;  /* Borda esquerda */
-    border-right: 5px solid #000; /* Borda direita */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Estilo das imagens do slideshow */
